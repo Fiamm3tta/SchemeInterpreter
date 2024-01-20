@@ -465,8 +465,6 @@ int Scheme::Eval(int root) // Evaluation code. And return result after evaluatio
 		int b = 0;
 		a = Eval(NodeArray[NodeArray[root].right].left);
 		b = Eval(NodeArray[NodeArray[NodeArray[root].right].right].left);
-		cout << HashTable[-1 * a].symbol << "\n";
-		cout << HashTable[-1 * b].symbol << "\n";
 		if (isNumber(HashTable[-1 * a].symbol) && isNumber(HashTable[-1 * b].symbol))
 		{
 			a = stoi(HashTable[-1 * a].symbol);

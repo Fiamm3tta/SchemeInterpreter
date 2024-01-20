@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SCHEME_H
+#define SCHEME_H
 
 #include <iostream>
 #include <string>
@@ -57,3 +58,4 @@ public:
 	friend ostream& operator<<(ostream& os, Scheme& scheme);
 };
 
+#endif
